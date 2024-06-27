@@ -1,0 +1,165 @@
+/* ### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%) */
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body, h1, p {
+  margin: 0;
+}
+
+body {
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: var(--red);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body, form input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: var(--red);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+section p {
+  margin-top: 2em;
+}
+
+.trial-banner,
+form {
+  border-radius: 10px;
+}
+
+.trial-banner,
+form {
+  box-shadow: 0px 6px #0000002b;
+}
+
+.trial-banner {
+  background-color: var(--blue);
+  text-align: center;
+  padding: 1em 2em;
+}
+
+form {
+  padding: 2em;
+  margin-top: 1em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+form input,
+form button {
+  padding: 1em;
+  border-radius: 4px;
+}
+
+form input {
+  border: solid 1px var(--grayish-blue);
+}
+
+form input:focus {
+  border: solid 1px var(--blue);
+  outline: 0;
+}
+
+/* form input[value] {
+  font-family: "Poppins", sans-serif;
+} */
+
+form button {
+  width: 100%;
+  background-color: var(--green);
+  color: white;
+  border: 0;
+  box-shadow: 0px 3px hsla(155, 49%, 39%, 0.773);
+}
+
+form p {
+  color: var(--grayish-blue);
+}
+
+form .disclaimer {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 2em;
+}
+
+footer a {
+  color: var(--blue);
+}
+
+@media (max-width: 700px) {
+  body {
+    justify-content: start;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  section {
+    text-align: center;
+  }
+}
+
+/* @media (max-width: 510px) {
+  .container {
+    margin-block: 5em;
+  }
+} */
