@@ -102,9 +102,11 @@ form input,
 form button {
   padding: 1em;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 form input {
+  width: 100%;
   border: solid 1px var(--grayish-blue);
 }
 
@@ -125,29 +127,58 @@ form button {
   box-shadow: 0px 3px hsla(155, 49%, 39%, 0.773);
 }
 
-form p {
-  color: var(--grayish-blue);
+form button:hover {
+  cursor: pointer;
 }
 
 form .disclaimer {
   width: 85%;
   margin: 0 auto;
   font-size: 0.6rem;
+  color: var(--grayish-blue);
   text-align: center;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   padding: 2em;
+  text-align: center;
+  font-size: 0.6rem;
 }
 
 footer a {
   color: var(--blue);
 }
 
+input.error-state {
+  border: solid 1px var(--red);
+  outline: 0;
+}
+
+.signup-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.signup-input-container img {
+  height: 40%;
+  position: absolute;
+  right: 1em;
+  display: none;
+}
+
+.error-message {
+  margin-top: 0.5em;
+  color: var(--red);
+  font-size: 0.6rem;
+  text-align: right;
+  font-style: italic;
+  display: none;
+}
+
 @media (max-width: 700px) {
   body {
+    padding-block: 5em;
     justify-content: start;
   }
   .container {
@@ -155,6 +186,9 @@ footer a {
   }
   section {
     text-align: center;
+  }
+  section h1 {
+    font-size: 2rem;
   }
 }
 
