@@ -29,12 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
+<img width="1370" alt="image" src="https://github.com/angela-tylee/intro-component-with-signup-form/assets/145020731/9364d4f0-92dd-431c-bd5f-1aa4435ed1ca">
+<img width="385" alt="image" src="https://github.com/angela-tylee/intro-component-with-signup-form/assets/145020731/98a439bf-513f-4692-b128-2e89d04417cc">
 
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/angela-tylee/intro-component-with-signup-form
+- Live Site URL: https://angela-tylee.github.io/intro-component-with-signup-form/
 
 ## My process
 
