@@ -58,4 +58,5 @@ Users should be able to:
 
 ### Continued development
 
-- To not show the error when users fill out the form for the first time. 
+- To not show the error when users fill out the form for the first time.
+- To select show or hide password.
